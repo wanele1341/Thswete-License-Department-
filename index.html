@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Steve Tshwete Licensing Booking Portal</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Steve Tshwete Licensing Department Booking Portal</h1>
+    <p>Please book a date for your licensing service below.</p>
+
+    <form id="bookingForm">
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" required/>
+
+      <label for="idNumber">ID Number:</label>
+      <input type="text" id="idNumber" required/>
+
+      <label for="serviceType">Service Type:</label>
+      <select id="serviceType" required>
+        <option value="">-- Select Service --</option>
+        <option value="License Disk Renewal">License Disk Renewal</option>
+        <option value="License Card Renewal">License Card Renewal</option>
+        <option value="Vehicle Registration">Vehicle Registration</option>
+        <option value="Traffic Fine Payment">Traffic Fine Payment</option>
+      </select>
+
+      <label for="bookingDate">Preferred Booking Date:</label>
+      <input type="date" id="bookingDate" required/>
+
+      <label for="contact">Email or Cellphone Number:</label>
+      <input type="text" id="contact" required/>
+
+      <button type="submit">Submit Booking</button>
+    </form>
+
+    <div id="messageArea"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
